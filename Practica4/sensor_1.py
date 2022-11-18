@@ -16,7 +16,7 @@ while (True):
     hour = current_date.strftime('%H')
     print(date)
     print(hour)
-    collection_name = u'sensor_1_{0}'.format(date)
+    collection_name = u'sensor_3_{0}'.format(date)
     hour_ref = db.collection(collection_name).document(hour)
     encendido = bool(random.getrandbits(1))
     hour_doc = hour_ref.get()
